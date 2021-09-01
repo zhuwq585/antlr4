@@ -145,6 +145,17 @@
 					</filesets>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+				    <archive>
+					<manifest>
+					    <mainClass>tool.src.org.antlr.v4.Tool</mainClass>
+					</manifest>
+				    </archive>
+				</configuration>
+			</plugin>
 		</plugins>
 		<pluginManagement>
 			<plugins>

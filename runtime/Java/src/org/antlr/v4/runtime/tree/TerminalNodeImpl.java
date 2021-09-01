@@ -15,6 +15,11 @@ public class TerminalNodeImpl implements TerminalNode {
 	public Token symbol;
 	public ParseTree parent;
 
+	public Object treeNodeInfo;
+	public void setNodeInfoObj(Object obj){
+		this.treeNodeInfo = obj;
+	}
+
 	public TerminalNodeImpl(Token symbol) {	this.symbol = symbol;	}
 
 	@Override

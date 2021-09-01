@@ -55,4 +55,6 @@ public interface ParseTree extends SyntaxTree {
 	 * 	based upon the parser.
 	 */
 	String toStringTree(Parser parser);
+
+	void setNodeInfoObj(Object obj);
 }

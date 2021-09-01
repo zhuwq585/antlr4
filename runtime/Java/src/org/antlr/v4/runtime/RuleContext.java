@@ -68,6 +68,12 @@ import java.util.List;
 public class RuleContext implements RuleNode {
 	public static final ParserRuleContext EMPTY = new ParserRuleContext();
 
+
+	public Object treeNodeInfo;
+	public void setNodeInfoObj(Object obj){
+		this.treeNodeInfo = obj;
+	}
+
 	/** What context invoked this rule? */
 	public RuleContext parent;
 
